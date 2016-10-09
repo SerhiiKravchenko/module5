@@ -1,0 +1,18 @@
+<div class="pokemons">
+    <div class="pokemon" ng-repeat="pokemon in mainCtr.pokemons">
+            <a href="" ng-click="setId(pokemon.pkdx_id, pokemon)">
+                <img class="pokemon__img" ng-src="/images/pokemons/{{pokemon.pkdx_id}}.png" />
+            </a>
+            <p class="pokemon__name">{{pokemon.name}}</p>
+            <div class="pokemon__abilities" ng-repeat="type in pokemon.types">{{type.name}}</div>
+            <a href="" ng-click="addFavorite(pokemon)">
+                <img class="pokemon__heart" src="/images/heart.png">
+            </a>
+    </div>
+    <!--<div class="clear"></div>-->
+    <div class="load">
+        <a href="" class="load__link" ng-click="setShowDescription(true)">Load more</a>
+    </div>
+</div>
+<desc-pok></desc-pok>
+

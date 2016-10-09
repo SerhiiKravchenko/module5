@@ -1,0 +1,103 @@
+.clear{
+clear: both
+}
+td, th{
+  padding: 3px;
+  border: 1px dotted black;
+}
+.wrapper{
+    width: 998px;
+    margin: auto;
+}
+.header{
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+    &__title {
+      padding-left: 135px;
+  }
+}
+
+.navigation{
+  margin: 10px;
+  &__link{
+    text-decoration: none;
+    margin:5px;
+    text-transform: uppercase;
+  }
+}
+.pokemons{
+  float: left;
+  width: 55%;
+}
+.pokemon{
+  width: 33%;
+  height: 300px;
+  float: left;
+  &__img{
+    display: block;
+    margin:0 auto ;
+  }
+  &__name{
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  &__abilities{
+    margin: 2px 1px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background: royalblue;
+  }
+  &__heart{
+    width: 40%;
+  }
+}
+
+.load{
+
+  &__link{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: orange;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 40px;
+  }
+}
+
+.pokemon-description{
+  float: left;
+  width: 45%;
+}
+.pokemon-detail{
+  width: 200px;
+  margin: auto;
+  border:1px solid black;
+
+  &__image{
+    display: block;
+    margin:0 auto ;
+  }
+  &__name{
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  &__table {
+    border-collapse: collapse;
+    border: 1px dotted black;
+    width: 98%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+}
+

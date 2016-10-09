@@ -1,0 +1,44 @@
+<div class="pokemon-description" ng-show="showDescription">
+    <div class="pokemon-detail">
+        <img class="pokemon-detail__image" ng-src="/images/pokemons/{{element.pkdx_id}}.png" alt="">
+        <h4 class="pokemon-detail__name">{{element.name}} #{{element.pkdx_id}}</h4>
+        <table class="pokemon-detail__table">
+            <tr>
+                <th>Type</th>
+                <th>Fire</th>
+            </tr>
+            <tr>
+                <td>Attack</td>
+                <td>{{element.attack}}</td>
+            </tr>
+            <tr>
+                <td>Defense</td>
+                <td>{{element.defense}}</td>
+            </tr>
+            <tr>
+                <td>HP</td>
+                <td>{{element.hp}}</td>
+            </tr>
+            <tr>
+                <td>SP Attack</td>
+                <td>{{element.sp_atk}}</td>
+            </tr>
+            <tr>
+                <td>SP Defence</td>
+                <td>{{element.sp_def}}</td>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>{{element.speed}}</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>{{element.weight}}</td>
+            </tr>
+            <tr>
+                <td>Total moves</td>
+                <td>{{element.moves.length}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
