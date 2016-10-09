@@ -12,9 +12,7 @@
             $scope.id = 0;
             $scope.element = {};
             $scope.isSelected = function (set) {
-                if($scope.id == set){
-                    return true;
-                } else false;
+                return $scope.id == set;
             };
 
             $scope.setId = function (id, element) {
@@ -57,9 +55,7 @@
             $scope.element = {};
 
             $scope.isSelected = function (set) {
-                if($scope.id == set){
-                    return true;
-                } else false;
+                return $scope.id == set;
             };
 
             $scope.setId = function (id, element) {
