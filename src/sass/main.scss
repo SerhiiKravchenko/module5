@@ -5,6 +5,13 @@ td, th{
   padding: 3px;
   border: 1px dotted black;
 }
+.selected{
+  background-color: orange;
+}
+.checked{
+  background-color: red;
+}
+
 .wrapper{
     width: 998px;
     margin: auto;

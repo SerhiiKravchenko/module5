@@ -8,14 +8,26 @@
             $http.get('http://pokeapi.co/api/v1/pokemon/?limit=12')
                 .success(function (data) {
                     controller.pokemons = data.objects;
-                    console.log(controller.pokemons);
                 });
             $scope.id = 0;
-            $scope.element = [];
+            $scope.element = {};
+            $scope.isSelected = function (set) {
+                if($scope.id == set){
+                    return true;
+                } else false;
+            };
+
             $scope.setId = function (id, element) {
                 $scope.id = id;
                 $scope.setShowDescription(false);
                 $scope.element = element;
+
+            };
+
+            $scope.storagePr = function (val) {
+                if(localStorage.getItem(val)){
+                    return true;
+                }
             };
             $scope.showDescription = false;
             $scope.setShowDescription = function (value) {
@@ -42,11 +54,24 @@
             }
             addPokemons();
             $scope.id = 0;
-            $scope.element = [];
+            $scope.element = {};
+
+            $scope.isSelected = function (set) {
+                if($scope.id == set){
+                    return true;
+                } else false;
+            };
+
             $scope.setId = function (id, element) {
                 $scope.id = id;
                 $scope.setShowDescription(false);
                 $scope.element = element;
+            };
+
+            $scope.storagePr = function (val) {
+                if(localStorage.getItem(val)){
+                    return true;
+                }
             };
             $scope.showDescription = false;
             $scope.setShowDescription = function (value) {

@@ -4,7 +4,8 @@ Module #5
 INSTALLATION
 ------------
 Type `npm start` for create all dependencies (npm and bower) and build project
-If you want to create dependencies separately you can choose commands below
+If you want to create dependencies separately you can choose commands below.
+-----------
 1. `npm install` for create npm dependencies
 2. `bower install` for create bower dependencies
 3. `gulp build` for build project
